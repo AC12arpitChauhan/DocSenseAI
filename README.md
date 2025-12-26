@@ -1,43 +1,34 @@
-# DocSense - Ask questions. Get cited answers.
+# DocSense
 
-<div align="center">
+**Ask questions. Get cited answers.**
 
-![DocSense Logo](https://img.shields.io/badge/DocSense-Research--First%20AI-E11D48?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik03IDIxaDEwYTIgMiAwIDAwMi0yVjkuNDE0YTEgMSAwIDAwLS4yOTMtLjcwN2wtNS40MTQtNS40MTRBMSAxIDAgMDAxMi41ODYgM0g3YTIgMiAwIDAwLTIgMnYxNGEyIDIgMiAwIDAwMiAyeiIvPjwvc3ZnPg==)
-
-**A research-first application that answers questions directly from your documents with page-level citations.**
-
-[![Next.js](https://img.shields.io/badge/Next.js-14+-black?style=flat-square&logo=next.js)](https://nextjs.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-Python-009688?style=flat-square&logo=fastapi)](https://fastapi.tiangolo.com/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178C6?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
-[![Redis](https://img.shields.io/badge/Redis-Queue-DC382D?style=flat-square&logo=redis)](https://redis.io/)
-
-</div>
+A research-first application that answers questions directly from your documents with page-level citations.
 
 ---
 
-## ✨ What is DocSense?
+## What is DocSense?
 
-**DocSense** is an AI-powered research assistant that lets you ask questions about your documents and get precise answers with page-level citations. Unlike generic chatbots, DocSense prioritizes accuracy and traceability - every answer points you back to the exact source.
+DocSense is an AI-powered research assistant that lets you ask questions about your documents and get precise answers with page-level citations. Unlike generic chatbots, DocSense prioritizes accuracy and traceability - every answer points you back to the exact source.
 
 ### Key Features
 
-- **💬 Ask Natural Questions** - Query your documents conversationally
-- **📄 Page-Level Citations** - Every answer includes `[1] [2]` citations linking to exact pages
-- **⚡ Real-Time Streaming** - Watch answers generate with reasoning steps visible
-- **🔍 PDF Viewer** - Click any citation to see the source with smooth animations
-- **📚 Multi-Document Search** - Upload and query across multiple PDFs
-- **🌙 Dark/Light Mode** - Professional interface with 60-30-10 color scheme
+- **Natural Language Queries** - Ask questions about your documents conversationally
+- **Page-Level Citations** - Every answer includes `[1] [2]` citations linking to exact pages
+- **Real-Time Streaming** - Watch answers generate with reasoning steps visible
+- **PDF Viewer** - Click any citation to see the source with smooth animations
+- **Multi-Document Search** - Upload and query across multiple PDFs
+- **Dark/Light Mode** - Professional interface with balanced color scheme
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Option 1: Docker Compose (Recommended)
 
 ```bash
 # Clone the repository
-git clone <repository-url>
-cd DocSense
+git clone https://github.com/AC12arpitChauhan/DocSenseAI.git
+cd DocSenseAI
 
 # Create .env file with your Gemini API key
 echo "GOOGLE_API_KEY=your-gemini-api-key" > .env
@@ -100,7 +91,7 @@ open http://localhost:3000
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
@@ -119,14 +110,14 @@ open http://localhost:3000
 
 ### How It Works
 
-1. **Upload PDFs** → Documents are processed and indexed for search
-2. **Ask a Question** → Your query is analyzed and relevant sections are found
-3. **Get Cited Answers** → AI generates an answer with inline citations `[1]`
-4. **Verify Sources** → Click any citation to view the exact PDF page
+1. **Upload PDFs** - Documents are processed and indexed for search
+2. **Ask a Question** - Your query is analyzed and relevant sections are found
+3. **Get Cited Answers** - AI generates an answer with inline citations `[1]`
+4. **Verify Sources** - Click any citation to view the exact PDF page
 
 ---
 
-## 🔧 Environment Variables
+## Environment Variables
 
 ### Backend (`.env`)
 
@@ -139,7 +130,7 @@ open http://localhost:3000
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 DocSense/
@@ -164,7 +155,7 @@ DocSense/
 
 ---
 
-## 📚 Technology Stack
+## Technology Stack
 
 ### Frontend
 - **Next.js 14+** - React framework with App Router
@@ -183,27 +174,10 @@ DocSense/
 
 ---
 
-## 🎨 Design Philosophy
-
-**60-30-10 Color Rule Applied:**
-- **60%** - Deep charcoal / Warm off-white (backgrounds)
-- **30%** - Warm slate gray (cards, borders)
-- **10%** - Rose accent (CTAs, citations, highlights)
-
-This creates a professional, research-focused interface that's easy on the eyes during long research sessions.
-
----
-
-## 📄 License
+## License
 
 MIT License - See [LICENSE](LICENSE) for details.
 
 ---
 
-<div align="center">
-
-**DocSense** - *Ask questions. Get cited answers.*
-
-Built with ❤️ using Next.js, FastAPI, and Gemini AI
-
-</div>
+**DocSense** - Ask questions. Get cited answers.
