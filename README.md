@@ -11,7 +11,53 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178C6?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
 [![Redis](https://img.shields.io/badge/Redis-Queue-DC382D?style=flat-square&logo=redis)](https://redis.io/)
 
+[Demo Video](#demo) • [Features](#key-features) • [Quick Start](#quick-start) • [Architecture](#architecture)
+
 </div>
+
+---
+
+## Demo
+
+### Video Walkthrough
+
+> **[Watch the full demo on Google Drive](YOUR_DRIVE_LINK_HERE)**
+
+### Screenshots
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="screenshots/hero-light.png" alt="Welcome Screen" />
+      <br />
+      <em>Welcome Screen - Light Mode</em>
+    </td>
+    <td align="center" width="50%">
+      <img src="screenshots/upload-documents.png" alt="Document Upload" />
+      <br />
+      <em>Upload & Manage Documents</em>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="screenshots/chat-dark.png" alt="Chat Dark Mode" />
+      <br />
+      <em>Chat Interface - Dark Mode</em>
+    </td>
+    <td align="center" width="50%">
+      <img src="screenshots/chat-light.png" alt="Chat Light Mode" />
+      <br />
+      <em>Chat Interface - Light Mode</em>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <img src="screenshots/pdf-viewer.png" alt="PDF Viewer with Citation" />
+      <br />
+      <em>Split View - Click citation to view exact PDF page</em>
+    </td>
+  </tr>
+</table>
 
 ---
 
