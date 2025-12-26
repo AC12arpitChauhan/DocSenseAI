@@ -1,0 +1,61 @@
+# AI Search Chat Application
+
+This is a sample PDF document for testing the AI Search Chat application.
+
+## Introduction
+
+Welcome to the AI Search Chat application! This document serves as a test file to demonstrate the PDF processing and citation capabilities of the system.
+
+## Key Features
+
+The application includes the following capabilities:
+
+1. **Real-time Streaming**: Responses are streamed token-by-token using Server-Sent Events (SSE).
+
+2. **Document Search**: The system can search across multiple PDF documents to find relevant information.
+
+3. **Citation Generation**: Answers include numbered citations [1], [2], [3] that reference specific pages in source documents.
+
+4. **Generative UI**: The response can include dynamically generated UI components like tables, charts, and info cards.
+
+## Technical Architecture
+
+### Backend Components
+
+The backend is built with:
+- FastAPI for the REST API
+- LangGraph for agent orchestration
+- Redis Queue for async job processing
+- pdfplumber for PDF text extraction
+
+### Frontend Components
+
+The frontend uses:
+- Next.js 16 with App Router
+- TypeScript for type safety
+- Tailwind CSS for styling
+- Framer Motion for animations
+- Zustand for state management
+
+## Sample Data
+
+Here is some sample data that can be used for testing queries:
+
+| Category | Value | Description |
+|----------|-------|-------------|
+| Users | 1,000 | Active monthly users |
+| Documents | 500 | PDFs in knowledge base |
+| Queries | 10,000 | Average daily queries |
+| Response Time | 2.5s | Average response time |
+
+## Conclusion
+
+This sample document demonstrates how the AI Search Chat application can process PDF content, extract relevant information, and present it with proper citations.
+
+For more information, please refer to the README.md file in the project root.
+
+---
+
+*Page 1 of 1*
+*AI Search Chat Demo Document*
+*Version 1.0*

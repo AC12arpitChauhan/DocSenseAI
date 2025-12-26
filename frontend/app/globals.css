@@ -1,0 +1,302 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   CSS Custom Properties - 60-30-10 Color Rule
+   60% = Base (backgrounds, large surfaces)
+   30% = Secondary (borders, cards, hover states)
+   10% = Accent (Rose - CTAs, highlights, primary actions)
+   ============================================================ */
+
+@layer base {
+  :root {
+    /* ========== LIGHT MODE ========== */
+    /* 60% - Warm off-white base */
+    --background: 40 20% 98%;
+    --foreground: 240 10% 10%;
+
+    /* 30% - Cool slate secondary */
+    --card: 40 15% 96%;
+    --card-foreground: 240 10% 10%;
+    --popover: 40 15% 96%;
+    --popover-foreground: 240 10% 10%;
+    --secondary: 220 14% 92%;
+    --secondary-foreground: 220 9% 25%;
+    --muted: 220 14% 92%;
+    --muted-foreground: 220 9% 45%;
+    --accent: 220 14% 88%;
+    --accent-foreground: 220 9% 25%;
+    --border: 220 13% 88%;
+    --input: 220 13% 88%;
+
+    /* 10% - Rose accent (unchanged) */
+    --primary: 347 77% 50%;
+    --primary-foreground: 0 0% 100%;
+    --ring: 347 77% 50%;
+
+    /* Destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Charts */
+    --chart-1: 347 77% 50%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 43 74% 49%;
+    --chart-4: 262 52% 55%;
+    --chart-5: 12 76% 61%;
+
+    --radius: 0.5rem;
+
+    /* Sidebar - Light */
+    --sidebar-background: 40 20% 97%;
+    --sidebar-foreground: 220 9% 30%;
+    --sidebar-primary: 347 77% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 14% 92%;
+    --sidebar-accent-foreground: 220 9% 25%;
+    --sidebar-border: 220 13% 88%;
+    --sidebar-ring: 347 77% 50%;
+  }
+
+  .dark {
+    /* ========== DARK MODE ========== */
+    /* 60% - Near-black charcoal */
+    --background: 228 15% 5%;
+    --foreground: 40 10% 96%;
+
+    /* 30% - Elevated surfaces */
+    --card: 228 12% 8%;
+    --card-foreground: 40 10% 95%;
+    --popover: 228 12% 12%;
+    --popover-foreground: 40 10% 95%;
+    --secondary: 225 10% 18%;
+    --secondary-foreground: 40 8% 88%;
+    --muted: 225 10% 18%;
+    --muted-foreground: 220 8% 55%;
+    --accent: 225 10% 22%;
+    --accent-foreground: 40 8% 90%;
+    --border: 225 10% 20%;
+    --input: 225 10% 20%;
+
+    /* 10% - Rose accent (unchanged) */
+    --primary: 347 77% 50%;
+    --primary-foreground: 0 0% 100%;
+    --ring: 347 77% 50%;
+
+    /* Destructive */
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 95%;
+
+    /* Charts */
+    --chart-1: 347 77% 55%;
+    --chart-2: 173 58% 45%;
+    --chart-3: 43 74% 55%;
+    --chart-4: 262 52% 60%;
+    --chart-5: 12 76% 65%;
+
+    /* Sidebar - Dark */
+    --sidebar-background: 228 15% 10%;
+    --sidebar-foreground: 40 10% 85%;
+    --sidebar-primary: 347 77% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 225 10% 18%;
+    --sidebar-accent-foreground: 40 8% 90%;
+    --sidebar-border: 225 10% 20%;
+    --sidebar-ring: 347 77% 50%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* ============================================================
+   Scrollbar Styles - Subtle and professional
+   ============================================================ */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground) / 0.3);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground) / 0.5);
+}
+
+/* ============================================================
+   Utility Classes
+   ============================================================ */
+@layer utilities {
+
+  /* Hide scrollbar but keep functionality */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Streaming cursor animation */
+  .streaming-cursor::after {
+    content: '|';
+    animation: cursor-blink 1s step-end infinite;
+    color: hsl(var(--primary));
+  }
+
+  @keyframes cursor-blink {
+
+    0%,
+    100% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0;
+    }
+  }
+
+  /* Max width for content readability */
+  .content-width {
+    @apply max-w-3xl mx-auto;
+  }
+}
+
+/* ============================================================
+   Component Styles
+   ============================================================ */
+@layer components {
+
+  /* Timeline connector line */
+  .timeline-line {
+    @apply absolute left-4 top-8 bottom-0 w-px bg-border;
+  }
+
+  /* Timeline node */
+  .timeline-node {
+    @apply relative flex items-start gap-3 pb-6;
+  }
+
+  /* Reasoning step */
+  .reasoning-step {
+    @apply flex items-center gap-2 px-3 py-2 text-sm rounded-lg bg-secondary/50 text-muted-foreground transition-colors duration-200;
+  }
+
+  .reasoning-step.active {
+    @apply bg-primary/10 text-primary;
+  }
+
+  .reasoning-step.complete {
+    @apply text-muted-foreground;
+  }
+
+  /* Citation badge - minimal, not attention-grabbing */
+  .citation-badge {
+    @apply inline-flex items-center justify-center min-w-[1.25rem] h-5 px-1 text-xs font-medium bg-secondary text-muted-foreground rounded cursor-pointer hover:bg-primary/20 hover:text-primary transition-colors duration-150;
+  }
+
+  /* Source card - clean and minimal */
+  .source-card {
+    @apply flex items-center gap-3 p-3 rounded-lg border border-border bg-card hover:bg-accent/50 cursor-pointer transition-colors duration-150;
+  }
+
+  /* Chat input container */
+  .chat-input-container {
+    @apply relative rounded-2xl border border-border bg-card shadow-sm focus-within:border-primary/50 focus-within:ring-1 focus-within:ring-primary/20 transition-all duration-200;
+  }
+
+  /* Message prose styling - custom typography */
+  .message-prose {
+    @apply max-w-none text-foreground;
+  }
+
+  .message-prose p {
+    @apply leading-relaxed my-2;
+  }
+
+  .message-prose h1,
+  .message-prose h2,
+  .message-prose h3 {
+    @apply font-semibold my-4;
+  }
+
+  .message-prose a {
+    @apply text-primary no-underline hover:underline;
+  }
+
+  .message-prose code {
+    @apply text-sm bg-secondary px-1.5 py-0.5 rounded;
+  }
+
+  .message-prose pre {
+    @apply bg-secondary border border-border rounded-lg p-4 overflow-x-auto my-4;
+  }
+
+  .message-prose ul,
+  .message-prose ol {
+    @apply pl-6 my-2;
+  }
+
+  .message-prose li {
+    @apply my-1;
+  }
+}
+
+/* ============================================================
+   PDF Viewer Overrides
+   ============================================================ */
+.rpv-core__viewer {
+  background-color: hsl(var(--background)) !important;
+}
+
+.rpv-core__page-layer {
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1) !important;
+}
+
+/* ============================================================
+   Animations - Subtle and professional
+   ============================================================ */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 200ms ease-out;
+}
+
+.animate-slide-up {
+  animation: slide-up 200ms ease-out;
+}
