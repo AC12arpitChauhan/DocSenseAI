@@ -1,14 +1,23 @@
-# DocSense
+# DocSense - Ask questions. Get cited answers.
 
-**Ask questions. Get cited answers.**
+<div align="center">
 
-A research-first application that answers questions directly from your documents with page-level citations.
+![DocSense Logo](https://img.shields.io/badge/DocSense-Research--First%20AI-E11D48?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik03IDIxaDEwYTIgMiAwIDAwMi0yVjkuNDE0YTEgMSAwIDAwLS4yOTMtLjcwN2wtNS40MTQtNS40MTRBMSAxIDAgMDAxMi41ODYgM0g3YTIgMiAwIDAwLTIgMnYxNGEyIDIgMiAwIDAwMiAyeiIvPjwvc3ZnPg==)
+
+**A research-first application that answers questions directly from your documents with page-level citations.**
+
+[![Next.js](https://img.shields.io/badge/Next.js-14+-black?style=flat-square&logo=next.js)](https://nextjs.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-Python-009688?style=flat-square&logo=fastapi)](https://fastapi.tiangolo.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178C6?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+[![Redis](https://img.shields.io/badge/Redis-Queue-DC382D?style=flat-square&logo=redis)](https://redis.io/)
+
+</div>
 
 ---
 
 ## What is DocSense?
 
-DocSense is an AI-powered research assistant that lets you ask questions about your documents and get precise answers with page-level citations. Unlike generic chatbots, DocSense prioritizes accuracy and traceability - every answer points you back to the exact source.
+**DocSense** is an AI-powered research assistant that lets you ask questions about your documents and get precise answers with page-level citations. Unlike generic chatbots, DocSense prioritizes accuracy and traceability - every answer points you back to the exact source.
 
 ### Key Features
 
@@ -180,4 +189,10 @@ MIT License - See [LICENSE](LICENSE) for details.
 
 ---
 
-**DocSense** - Ask questions. Get cited answers.
+<div align="center">
+
+**DocSense** - *Ask questions. Get cited answers.*
+
+Built with Next.js, FastAPI, and Gemini AI
+
+</div>
