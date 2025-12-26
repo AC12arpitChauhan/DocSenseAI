@@ -21,7 +21,7 @@
 
 ### Video Walkthrough
 
-> **[Watch the full demo on Google Drive](YOUR_DRIVE_LINK_HERE)**
+> **[Watch the full demo on Google Drive](https://drive.google.com/file/d/1U3Y5E83eKUPRbJbodCTTSosYY1LxD83m/view?usp=sharing)**
 
 ### Screenshots
 
